@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'semaphore.App'
+    mainClass = 'semaphore.BankATMSimulation'
 }
 
 tasks.named('test') {
