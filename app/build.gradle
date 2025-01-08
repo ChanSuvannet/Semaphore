@@ -20,7 +20,9 @@ dependencies {
     testImplementation libs.junit.jupiter
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
+    implementation 'com.google.guava:guava:31.0-jre' // Add Guava dependency with version
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1' // JUnit version
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.7.1'
     // This dependency is used by the application.
     implementation libs.guava
 }
@@ -34,7 +36,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'semaphore.BankATMSimulation'
+   mainClass = 'semaphore.Main'
 }
 
 tasks.named('test') {

@@ -8,6 +8,5 @@ public class ATM {
 
     public void useATM(Customer customer) {
         System.out.println(customer.getName() + " is using the ATM.");
-        customer.performTransaction();
     }
 }

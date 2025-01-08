@@ -10,11 +10,11 @@ public class Bank {
         accounts = new HashMap<>();
     }
 
-    public void addAccount(String customerName, double initialBalance) {
-        accounts.put(customerName, new Account(customerName, initialBalance));
+    public void addAccount(String name, double initialBalance) {
+        accounts.put(name, new Account(name, initialBalance));
     }
 
-    public Account getAccount(String customerName) {
-        return accounts.get(customerName);
+    public Account getAccount(String name) {
+        return accounts.get(name);
     }
 }
